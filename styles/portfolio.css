@@ -31,6 +31,11 @@ h2 {
   font-family: var(--secondary-font-family);
   font-weight: bold;
   font-size: 64px;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 90px;
 }
 
 a {
@@ -53,7 +58,19 @@ p {
   font-size: 18px;
   line-height: 10px;
   padding: 15px 12px;
-  margin-top: 20px;
+  margin-top: 5px;
+}
+
+.btn-branding-outline {
+  font-family: (--primary-font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 10px;
+  padding: 15px 12px;
+  margin-top: 5px;
+  background-color: rgb(56, 50, 50);
+  color: rgb(208, 195, 179);
+  border-radius: 4px;
 }
 
 .description {
@@ -67,4 +84,47 @@ p {
   padding-bottom: 20px;
   margin-top: 0;
   overflow: hidden;
+}
+
+.project-description {
+  line-height: 1.5;
+  width: 600px;
+  margin: auto;
+  text-align: right;
+}
+
+.project-summary {
+  line-height: 1.5;
+  width: 300px;
+  margin: auto;
+  display: inline-block;
+  font-size: 13px;
+}
+
+.scroll {
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--primary-font-family);
+}
+
+.img-fluid {
+  margin-top: 90px;
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+  .project-summary {
+    padding: 0;
+    text-align: center;
+  }
+  .page-container {
+    padding: 80px 20px;
+  }
 }
