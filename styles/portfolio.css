@@ -36,6 +36,9 @@ h2 {
 
 h3 {
   margin-top: 90px;
+  font-family: var(--secondary-font-family);
+  font-size: 35px;
+  font-weight: bold;
 }
 
 a {
@@ -91,6 +94,9 @@ p {
   width: 600px;
   margin: auto;
   text-align: right;
+  font-family: (--primary-font-family);
+  font-weight: 600;
+  opacity: 0.9;
 }
 
 .project-summary {
@@ -99,6 +105,8 @@ p {
   margin: auto;
   display: inline-block;
   font-size: 13px;
+  font-family: (--primary-font-family);
+  opacity: 0.8;
 }
 
 .scroll {
@@ -115,16 +123,34 @@ p {
 @media (max-width: 960px) {
   h1 {
     font-size: 40px;
+    margin-top: 1px;
   }
 
   h2 {
     font-size: 40px;
+  }
+  .greetings {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .presentation {
+    text-align: center;
+    padding: 30px 10px;
   }
   .project-summary {
     padding: 0;
     text-align: center;
   }
   .page-container {
-    padding: 80px 20px;
+    padding: 50px 10px;
+  }
+  .description,
+  .project-description,
+  .project-summary {
+    width: 100%;
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
   }
 }
