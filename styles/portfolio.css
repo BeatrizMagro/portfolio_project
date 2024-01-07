@@ -11,11 +11,40 @@
   margin-top: 80px;
   margin-left: 20px;
 }
+
+.greetings-about {
+  font-family: var(--primary-font-family);
+  margin-left: 20px;
+  line-height: 2;
+  font-weight: 600;
+}
+
 .presentation {
   text-align: center;
   font-family: var(--primary-font-family);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 2;
+
+  opacity: 0.9;
+}
+.presentation-about {
+  font-family: var(--primary-font-family);
+  font-weight: 700;
+  line-height: 2;
+  margin-top: -12px;
+  margin-left: 20px;
+  opacity: 0.9;
+}
+
+.description-about {
+  margin-left: 20px;
+  margin-top: -18px;
+  line-height: 1.5;
+  margin-bottom: -150px;
+}
+
+header {
+  margin-top: 80px;
 }
 
 h1 {
@@ -52,7 +81,8 @@ p {
   font-family: (--primary-font-family);
 }
 
-.btn-branding {
+.btn-branding,
+.btn-about {
   background-color: rgb(208, 195, 179);
   border-radius: 4px;
   color: rgb(56, 50, 50);
@@ -76,10 +106,16 @@ p {
   border-radius: 4px;
 }
 
+.btn-about {
+  margin-left: 200px;
+  margin-top: -100px;
+}
+
 .description {
   line-height: 1.5;
   width: 600px;
   margin: auto;
+  margin-top: -10px;
 }
 
 .page-container {
@@ -87,6 +123,7 @@ p {
   padding-bottom: 20px;
   margin-top: 0;
   overflow: hidden;
+  padding: 50px 5px;
 }
 
 .project-description {
@@ -120,6 +157,14 @@ p {
   margin-top: 90px;
 }
 
+.beatriz-magro {
+  width: 285px;
+  border-radius: 20px;
+  float: right;
+  margin-right: 80px;
+  margin-top: -80px;
+}
+
 @media (max-width: 960px) {
   h1 {
     font-size: 40px;
@@ -130,20 +175,19 @@ p {
     font-size: 40px;
   }
   .greetings {
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 0;
   }
-  .presentation {
-    text-align: center;
-    padding: 30px 10px;
+
+  .greetings-about {
+    margin-top: -20px;
   }
+
   .project-summary {
     padding: 0;
     text-align: center;
   }
-  .page-container {
-    padding: 50px 10px;
-  }
+
   .description,
   .project-description,
   .project-summary {
@@ -152,5 +196,26 @@ p {
   }
   h3 {
     text-align: center;
+  }
+  .beatriz-magro {
+    margin-right: 0px;
+    width: 35%;
+    margin-top: -299px;
+  }
+
+  header {
+    margin-top: 10px;
+  }
+  .presentation-about {
+    margin-bottom: 50px;
+  }
+  .btn-about {
+    margin-top: 10px;
+    margin-left: 30px;
+    line-height: 1;
+  }
+  .description-about {
+    margin-bottom: 10px;
+    text-align: left;
   }
 }
