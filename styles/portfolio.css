@@ -3,6 +3,37 @@
   --secondary-font-family: "Rufina", serif;
 }
 
+/* Editar tamanho do logo no responsive */
+.logo {
+  max-width: 50px;
+}
+
+nav {
+  padding: 10px 0;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+  margin-left: 12px;
+}
+
+nav a {
+  text-decoration: none;
+  color: lightgreen;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: yellow;
+}
+
 .greetings {
   text-align: left;
   font-family: var(--primary-font-family);
@@ -266,5 +297,9 @@ p {
   .description-about {
     margin-bottom: 10px;
     text-align: left;
+  }
+
+  nav a {
+    font-size: 12px;
   }
 }
