@@ -30,8 +30,10 @@
       src="https://kit.fontawesome.com/66b6c7d24f.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Belanosima&family=Kanit:wght@500&family=Poppins:ital,wght@0,500;1,400&family=Quicksand:wght@400;600;700&family=Roboto+Condensed:wght@400;600&family=Roboto:wght@100&family=Rufina:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Belanosima&family=Kanit:wght@500&family=Poppins:ital,wght@0,500;1,400&family=Quicksand:wght@400;600;700&family=Roboto+Condensed:wght@400;600&family=Roboto:wght@100&family=Rufina:wght@400;700&family=Slabo+27px&display=swap"
       rel="stylesheet"
     />
     <link
@@ -42,41 +44,58 @@
     <title>Contact | Beatriz Magro</title>
   </head>
   <body>
+    <nav class="d-flex justify-content-between">
+      <img src="img/bm-logotype.png" class="logo" alt="Beatriz logo" />
+      <ul>
+        <li>
+          <a href="/" title="Homepage">Home</a>
+        </li>
+        <li>
+          <a href="/about.html" title="About Beatriz">About</a>
+        </li>
+        <li>
+          <a href="/work.html" title="Beatriz's work">Work</a>
+        </li>
+        <li class="active">
+          <a href="/contact.html" title="Contact Beatriz">Contact</a>
+        </li>
+      </ul>
+    </nav>
     <div class="page-container">
-      <div class="contact-title">
+      <div class="secondary-title">
         <h1 class="mt-3 mb-2">
           Have something on your mind?
-        </br>
+          <br />
           Here's where you can find me:
         </h1>
-        <div class="contact-container">
-          <div class="mt-5">
-            <h4>Email</h4>
-          </div>
-          <p>
-            <a href="mailto:beatrizmagro1@gmail.com">beatrizmagro1@gmail.com</a>
-          </p>
-          <div class="mt-3">
-            <h4>LinkedIn</h4>
-          </div>
-          <p>
-            <a
-              href="https://www.linkedin.com/in/beatriz-magro-14b48b18b/"
-              target="_blank"
-            >
-              @Beatriz Magro
-            </a>
-          </p>
-          <div class="mt-3">
-            <h4>Github</h4>
-          </div>
-          <p>
-            <a href="https://github.com/BeatrizMagro" target="_blank">
-              @Beatriz Magro
-            </a>
-          </p>
-        </div>
       </div>
+      <footer>
+        <div class="d-flex justify-content-center mb-3">
+          <a
+            href="mailto:beatrizmagro1@gmail.com"
+            class="email-link"
+            title="email Beatriz"
+          >
+            beatrizmagro1@gmail.com
+          </a>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://www.linkedin.com/in/beatriz-magro-14b48b18b/"
+            target="_blank"
+            title="Linkedin Profile"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/BeatrizMagro"
+            target="_blank"
+            title="Github profile"
+          >
+            <i class="fa-brands fa-square-github"></i>
+          </a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

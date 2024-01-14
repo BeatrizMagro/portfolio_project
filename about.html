@@ -31,8 +31,8 @@
       crossorigin="anonymous"
     ></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Belanosima&family=Kanit:wght@500&family=Poppins:ital,wght@0,500;1,400&family=Quicksand:wght@400;600;700&family=Roboto+Condensed:wght@400;600&family=Roboto:wght@100&family=Rufina:wght@400;700&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Belanosima&family=Kanit:wght@500&family=Poppins:ital,wght@0,500;1,400&family=Quicksand:wght@400;600;700&family=Roboto+Condensed:wght@400;600&family=Roboto:wght@100&family=Rufina:wght@400;700&family=Slabo+27px&display=swap"
     />
     <link
       rel="stylesheet"
@@ -41,27 +41,61 @@
     <link rel="stylesheet" href="styles/portfolio.css" />
     <title>About Beatriz</title>
   </head>
-  <body> 
+
+  <body>
+    <nav class="d-flex justify-content-between">
+      <img src="img/bm-logotype.png" class="logo" alt="Beatriz logo" />
+      <ul>
+        <li>
+          <a href="/" title="Homepage">Home</a>
+        </li>
+        <li class="active">
+          <a href="/about.html" title="About Beatriz">About</a>
+        </li>
+        <li>
+          <a href="/work.html" title="Beatriz's work">Work</a>
+        </li>
+        <li>
+          <a href="/contact.html" title="Contact Beatriz">Contact</a>
+        </li>
+      </ul>
+    </nav>
     <div class="page-container">
-    <header>
-      <div class="row">
-        <div class="col-12">
-          <h1>About Me</h1>
-          <div class=" col-12">
-          <p class="presentation-about">Frontend Developer, based in Portugal</p>
+      <header>
+        <div class="row">
+          <div class="col-12">
+            <h1>About Me</h1>
           </div>
-          <div class="col-12 mt-4">
-          <p class="greetings-about">
-            Welcome to my little corner of the internet!
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="presentation-about">
+              Frontend Developer, based in Portugal
             </p>
           </div>
-          <div class="col-6">
-          <p class="description-about">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            ipsam officiis exercitationem veniam, voluptatum eos laboriosam
-            veritatis dolore autem dicta quia fugiat repellat magni quas tempora
-            itaque eaque perferendis id?
-          </p>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="greetings-about">
+              Welcome to my little corner of the internet!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <p class="description-about">
+              Hello, I'm Beatriz Magro, a 28-year-old librarian who finds joy in
+              the world of literature and the pursuit of knowledge. Beyond my
+              love for reading, I've recently ventured into coding, fulfilling a
+              long-held aspiration to build web pages from scratch. Learning
+              something new is a constant source of excitement for me, and
+              coding has become my latest fascination. Whether surrounded by the
+              enchanting tales of a library or immersed in the intricacies of
+              code, I embody a dynamic spirit eager to explore and expand my
+              horizons. My journey is a delightful blend of storytelling and
+              digital exploration, fueled by a passion for both literature and
+              coding.
+            </p>
           </div>
           <div class="col-12">
             <img
@@ -70,14 +104,17 @@
               class="beatriz-magro img-fluid"
             />
           </div>
-          </div>
-        </header>
-        <a href="index.html#projects" class="btn btn-about">Go to my projects</a>
-
-        
-          
         </div>
-      </div>
+      </header>
     </div>
+    <p class="text-center mt-3">
+      This project was coded for SheCodes and is
+      <a
+        href="https://github.com/BeatrizMagro/portfolio_project"
+        target="_blank"
+        class="open-sourced"
+        >open-sourced</a
+      >
+    </p>
   </body>
 </html>

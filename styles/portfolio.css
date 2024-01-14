@@ -1,11 +1,12 @@
 :root {
   --primary-font-family: "Quicksand", sans-serif;
   --secondary-font-family: "Rufina", serif;
+  --third-font-family: "Slabo 27px", serif;
+  --primary-color: #f7eddc;
 }
 
-/* Editar tamanho do logo no responsive */
 .logo {
-  max-width: 50px;
+  max-width: 8%;
 }
 
 nav {
@@ -13,25 +14,26 @@ nav {
 }
 
 nav ul {
-  padding: 0;
+  padding: 0px;
 }
 
 nav li {
   display: inline;
   list-style: none;
   line-height: 40px;
-  margin-left: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 nav a {
   text-decoration: none;
-  color: lightgreen;
+  color: #605b5b;
   transition: all 100ms ease-in-out;
 }
 
 nav a:hover,
 nav li.active a {
-  color: yellow;
+  color: #141313;
 }
 
 .greetings {
@@ -55,6 +57,7 @@ nav li.active a {
   font-family: var(--primary-font-family);
   font-weight: 700;
   line-height: 2;
+  letter-spacing: 2px;
 
   opacity: 0.9;
 }
@@ -65,13 +68,18 @@ nav li.active a {
   margin-top: -12px;
   margin-left: 20px;
   opacity: 0.9;
+  letter-spacing: 2px;
 }
 
 .description-about {
   margin-left: 20px;
-  margin-top: -18px;
+  margin-top: -10px;
   line-height: 1.5;
-  margin-bottom: -150px;
+  font-family: var(--third-font-family);
+  font-size: 18px;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  line-height: 1.5;
 }
 
 header {
@@ -112,8 +120,7 @@ p {
   font-family: (--primary-font-family);
 }
 
-.btn-branding,
-.btn-about {
+.btn-branding {
   background-color: rgb(208, 195, 179);
   border-radius: 4px;
   color: rgb(56, 50, 50);
@@ -146,11 +153,17 @@ p {
   line-height: 1.5;
   width: 600px;
   margin: auto;
-  margin-top: -10px;
+  font-family: var(--third-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .page-container {
-  background-color: yellow;
+  background-color: var(--primary-color);
   padding-bottom: 20px;
   margin-top: 0;
   overflow: hidden;
@@ -188,18 +201,24 @@ p {
   margin-top: 90px;
 }
 
+.project-image {
+  max-width: 40%;
+  margin-left: 90px;
+}
+
 .beatriz-magro {
   width: 285px;
   border-radius: 20px;
   float: right;
   margin-right: 80px;
-  margin-top: -80px;
+  margin-top: -450px;
 }
 
 .secondary-title h1 {
   text-align: center;
-  margin-bottom: -30px;
-  font-size: 60px;
+  margin-bottom: -50px;
+  font-size: 40px;
+  opacity: 0.9;
 }
 
 .content img {
@@ -212,7 +231,7 @@ p {
 }
 
 .content-container {
-  background-color: yellow;
+  background-color: var(--primary-color);
   padding-bottom: 20px;
   overflow: hidden;
   padding: 50px 5px;
@@ -238,31 +257,58 @@ p {
   text-align: center;
 }
 
-.contact-title h1 {
-  font-size: 60px;
-  text-align: center;
-  margin-top: -40px;
-  font-weight: bold;
+.content-container:nth-child(1) h4 {
+  font-family: var(--secondary-font-family), sans-serif;
+}
+.content-container:nth-child(1) p {
+  font-family: var(--primary-font-family), sans-serif;
+}
+
+.content-container:nth-child(2) h4 {
+  font-family: var(--secondary-font-family), sans-serif;
+}
+.content-container:nth-child(2) p {
+  font-family: var(--primary-font-family), sans-serif;
+}
+
+.content-container:nth-child(3) h4 {
+  font-family: var(--secondary-font-family), sans-serif;
+}
+.content-container:nth-child(3) p {
+  font-family: var(--primary-font-family), sans-serif;
+}
+
+.content-container:nth-child(4) h4 {
+  font-family: var(--secondary-font-family), sans-serif;
+}
+.content-container:nth-child(4) p {
+  font-family: var(--primary-font-family), sans-serif;
 }
 
 footer .email-link {
   text-decoration: none;
   color: black;
-  font-size: 24px;
+  opacity: 0.7;
+  font-size: 20px;
+  margin-bottom: -10px;
 }
 
 footer {
   margin: 50px 0;
 }
 
+footer h4 {
+  font-family: var(--secondary-font-family);
+}
+
 footer .email-link:hover {
-  color: blue;
+  color: #605b5b;
 }
 
 footer .social-links a {
   margin: 0 20px;
-  color: blue;
-  background: olive;
+  color: #d9cfc2;
+  background: #605b5b;
   padding: 10px 14px;
   border-radius: 50%;
   font-size: 18px;
@@ -270,12 +316,12 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-  color: white;
-  background: blue;
+  color: #605b5b;
+  background: #d9cfc2;
 }
 
 footer .contact-box {
-  background-color: blue;
+  background-color: var(--primary-color);
   padding: 30px 120px;
   border-radius: 10px;
 }
@@ -284,10 +330,24 @@ footer .contact-box p {
   margin: 0;
 }
 
-@media (max-width: 960px) {
+.open-sourced {
+  color: #605b5b;
+}
+
+.open-sourced:hover {
+  color: #141313;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 30%;
+  }
+
   nav {
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 40px;
   }
 
   nav ul {
@@ -297,94 +357,111 @@ footer .contact-box p {
   nav li {
     margin: 5px 0;
   }
-}
 
-header {
-  margin-top: 10px;
-}
+  header {
+    margin-top: 10px;
+  }
 
-h1 {
-  font-size: 40px;
-  margin-top: 10px;
-}
+  h1 {
+    font-size: 40px;
+    margin-top: 10px;
+  }
 
-h2 {
-  font-size: 40px;
-}
-.greetings {
-  margin-top: 10px;
-}
+  h2 {
+    font-size: 40px;
+  }
+  .greetings {
+    margin-top: 20px;
+    font-size: 30px;
+  }
 
-.greetings-about {
-  margin-top: -20px;
-}
+  .greetings-about {
+    margin-top: -30px;
+    font-size: 12px;
+  }
 
-.project-summary {
-  padding: 0;
-  text-align: center;
-}
+  .project-summary {
+    padding: 0;
+    text-align: center;
+  }
 
-.description,
-.project-description,
-.project-summary {
-  width: 100%;
-  text-align: center;
-  padding: 40px 20px;
-}
-h3 {
-  text-align: center;
-}
-.beatriz-magro {
-  margin-right: 0px;
-  width: 35%;
-  margin-top: -299px;
-}
+  .description,
+  .project-description,
+  .project-summary,
+  .presentation {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+  }
 
-header {
-  margin-top: 10px;
-}
-.presentation-about {
-  margin-bottom: 50px;
-}
-.btn-about {
-  margin-top: 10px;
-  margin-left: 30px;
-  line-height: 1;
-}
-.description-about {
-  margin-bottom: 10px;
-  text-align: left;
-}
+  .presentation {
+    margin-bottom: 30px;
+  }
 
-nav a {
-  font-size: 12px;
-}
+  .btn-branding {
+    text-align: center;
+  }
 
-footer .contact-box {
-  padding: 30px 60px;
-  margin-bottom: 30px;
-}
+  h3 {
+    text-align: center;
+  }
+  .beatriz-magro {
+    display: none;
+  }
 
-.email-link {
-  padding: 10px;
-}
+  header {
+    margin-top: 10px;
+  }
+  .presentation-about {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .btn-about {
+    margin-top: 10px;
+    margin-left: 30px;
+    line-height: 1;
+  }
+  .description-about {
+    margin-right: 40px;
+    font-size: 10px;
+    width: 100%;
+    margin-bottom: -15px;
+  }
 
-footer .contact-box {
-  padding: 30px 20px;
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  nav a {
+    font-size: 12px;
+  }
 
-footer .contact-box p {
-  margin: 10px 0;
-}
+  footer .contact-box {
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-footer .social-links {
-  margin: 20px 0;
-}
+  .email-link {
+    padding: 10px;
+  }
 
-footer .social-links a {
-  margin: 0 10px;
+  .content-container {
+    padding: 30px -50px;
+  }
+
+  .col-md-6 {
+    margin-bottom: 100px;
+  }
+
+  footer .contact-box p {
+    margin: 10px 0;
+  }
+
+  footer .social-links {
+    margin: 20px 0;
+  }
+
+  footer .social-links a {
+    margin: 0 10px;
+  }
 }
